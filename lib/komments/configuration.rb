@@ -1,5 +1,5 @@
 require 'singleton'
-require 'kommnets/errors'
+require 'komments/errors'
 
 module Komments
   class Configuration
