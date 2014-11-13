@@ -1,6 +1,8 @@
-# Komments
+[![Gem Version](http://img.shields.io/gem/v/komments.svg?style=flat)](http://badge.fury.io/rb/komments)
+[![Build Status](http://img.shields.io/travis/mattpolito/komments_gem/master.svg?style=flat)](https://travis-ci.org/mattpolito/komments_gem)
+[![Code Climate](http://img.shields.io/codeclimate/github/mattpolito/komments_gem.svg?style=flat)](https://codeclimate.com/github/mattpolito/komments_gem)
 
-TODO: Write a gem description
+Ruby wrapper to get configured with the commenting engine, [Komments][]
 
 ## Installation
 
@@ -12,11 +14,15 @@ gem 'komments'
 
 And then execute:
 
-    $ bundle
+```shell
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install komments
+```shell
+gem install komments
+```
 
 ## Usage
 
@@ -29,3 +35,5 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+[Komments]: http://komments.net
