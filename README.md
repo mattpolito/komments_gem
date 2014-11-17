@@ -26,8 +26,37 @@ gem install komments
 
 ## Usage
 
-TODO: Write usage instructions here
+Currently the main functionality of this library is to configure your api key so that your personalized site url can be generated.
 
+To do this:
+
+```ruby
+Komments.configure do |config|
+  config.api_key = 'API_KEY_GOES_HERE'
+end
+```
+
+Would be the most straight forward way to go about this. If this were being used in a [Rails][] project, I would recommend putting this in your `config/initializers` directory.
+
+Now that your credentials are out of the way, you'll be able to call:
+
+```ruby
+Komments.website_url
+```
+
+This will provide your site's url to [Komments][]. Add that to a `script` tag in your template and you will be good to go.
+
+```erb
+<script async="async" src=<%= Komments.website_url %>></script>
+
+```
+
+That will end up looking this this:
+
+
+```html
+<script async="async" src="//komments.net/embed/{API_KEY_GOES_HERE}"></script>
+```
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/komments/fork )
@@ -37,3 +66,4 @@ TODO: Write usage instructions here
 5. Create a new Pull Request
 
 [Komments]: http://komments.net
+[Rails]: http://rubyonrails.org
