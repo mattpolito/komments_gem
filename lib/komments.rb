@@ -16,3 +16,7 @@ module Komments
     Configuration.instance
   end
 end
+
+if defined?(Rails::Railtie)
+  require 'komments/railtie'
+end

@@ -57,6 +57,35 @@ That will end up looking this this:
 ```html
 <script async="async" src="//komments.net/embed/{API_KEY_GOES_HERE}"></script>
 ```
+
+# Rails Usage
+
+If you happen to be integrating Komments into your Rails application, you're covered as well.
+
+When a Rails app is detected, you'll gain access to the `komments_script_tag` helper.
+
+```ruby
+<%= komments_script_tag %>
+```
+
+Which will render out to:
+
+```html
+<script async="async" src="//komments.net/embed/{API_KEY_GOES_HERE}"></script>
+```
+
+And if you [don't want the script to be loaded asynchronously][async vs defer]...
+
+```ruby
+<%= komments_script_tag(false) %>
+```
+
+Which will render out to:
+
+```html
+<script defer="defer" src="//komments.net/embed/{API_KEY_GOES_HERE}"></script>
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/komments/fork )
@@ -67,3 +96,4 @@ That will end up looking this this:
 
 [Komments]: http://komments.net
 [Rails]: http://rubyonrails.org
+[async vs defer]: http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html
