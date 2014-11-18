@@ -1,5 +1,4 @@
 [![Gem Version](http://img.shields.io/gem/v/komments.svg?style=flat)](http://badge.fury.io/rb/komments)
-[![Build Status](http://img.shields.io/travis/mattpolito/komments_gem/master.svg?style=flat)](https://travis-ci.org/mattpolito/komments_gem)
 [![Code Climate](http://img.shields.io/codeclimate/github/mattpolito/komments_gem.svg?style=flat)](https://codeclimate.com/github/mattpolito/komments_gem)
 
 Ruby wrapper to get configured with the commenting engine, [Komments][]
