@@ -1,5 +1,10 @@
+require 'action_view'
+require 'komments'
+
 module Komments
   module ViewHelpers
+    include ActionView::Helpers::TagHelper
+
     def komments_script_tag(async = true)
       options = Hash.new
       options[:src] = Komments.website_url

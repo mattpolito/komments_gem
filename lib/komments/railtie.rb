@@ -1,9 +1,11 @@
+require 'rails'
+require 'komments/view_helpers'
+
 module Komments
   class Railtie < Rails::Railtie
-    initializer "komments" do |app|
+    initializer "komments.action_view" do |app|
       ActiveSupport.on_load(:action_view) do
-        require 'komments/view_helpers'
-        ::ActionView::Base.send :include, ViewHelpers
+        include ::Komments::ViewHelpers
       end
     end
   end
